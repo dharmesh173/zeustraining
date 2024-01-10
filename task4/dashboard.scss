@@ -1,0 +1,69 @@
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-Light.ttf);
+    font-weight: lighter;
+}
+
+@import "./sass/mixins/mixin.scss";
+@import "./sass/variables/variables.scss";
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: QuickSand;
+    background: $backgroundColor 0% 0% no-repeat padding-box;
+}
+
+.main {
+    background-color: $backgroundColor;
+    min-height: 100vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $primaryBlack;
+}
+
+select {
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-image: url("./icons/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position: calc(100% - 6px) center;
+    font: normal normal 700 16px/20px Quicksand;
+    color: $primaryBlack;
+}
+
+@import "./sass/header/header.scss";
+@import "./sass/body/body.scss";
+@import "./sass/footer/footer.scss";
+
+

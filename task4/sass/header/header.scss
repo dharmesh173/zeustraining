@@ -1,0 +1,116 @@
+@import "../variables/variables.scss";
+@import "../mixins/mixin.scss";
+
+.header {
+    width: 100%;
+    height: 56px;
+    background-color: $headerColor;
+    /* background: url("./header\ pattern\ image.png"); */
+    display: flex;
+    justify-content: space-between;
+    svg {
+        margin: 11px 0 0 24px;
+        height: 36px;
+    }
+}
+
+.menus {
+    @include flexCenter;
+    margin-right: 20px;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $whiteBg;
+        display: none; /* Initially hide the border */
+    }
+    a {
+        margin: 19px;
+        font: normal normal 700 14px/14px QuickSand;
+        color: #3fd28b;
+        padding: 20px;
+    }
+    .nav-button.active {
+        &:after {
+            display: block;
+        }
+    }
+    .nav-icon {
+        width: 21px;
+        height: 24px;
+        text-align: center;
+        padding: 7px;
+        position: relative;
+        .hbadge {
+            position: absolute;
+            width: 11px;
+            height: 14px;
+            background-color: blue;
+            left: 60%;
+            top: 4px;
+            color: $whiteBg;
+            font-size: 12px;
+            border-radius: 100%;
+            padding: 1%;
+            text-align: center;
+        }
+
+        .hbadgeprofile {
+            position: absolute;
+            width: 11px;
+            height: 14px;
+            background-color: $whiteBg;
+            left: 60%;
+            top: 4px;
+            color: $primaryBlack;
+            font-size: 12px;
+            border-radius: 100%;
+            padding: 1px;
+            text-align: center;
+        }
+    }
+
+    .nav-button {
+        &:hover {
+            color: whitesmoke;
+            border-bottom: 2px solid $whiteBg;
+        }
+    }
+}
+
+.sm,
+.sm svg {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .lg {
+        display: none !important;
+    }
+    .sm {
+        display: block;
+        svg {
+            display: block;
+        }
+    }
+    .nav-button {
+        display: none;
+    }
+    .main {
+        .header {
+            svg {
+                margin: 7px 0 0 14px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .nav-button {
+        display: none;
+    }
+}

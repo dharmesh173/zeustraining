@@ -1,0 +1,104 @@
+.header {
+  width: 100%;
+  height: 56px;
+  background-color: #25313f;
+  /* background: url("./header\ pattern\ image.png"); */
+  display: flex;
+  justify-content: space-between;
+}
+.header svg {
+  margin: 11px 0 0 24px;
+  height: 36px;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.menus::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  display: none; /* Initially hide the border */
+}
+.menus a {
+  margin: 19px;
+  font: normal normal 700 14px/14px QuickSand;
+  color: #3fd28b;
+  padding: 20px;
+}
+.menus .nav-button.active:after {
+  display: block;
+}
+.menus .nav-icon {
+  width: 21px;
+  height: 24px;
+  text-align: center;
+  padding: 7px;
+  position: relative;
+}
+.menus .nav-icon .hbadge {
+  position: absolute;
+  width: 11px;
+  height: 14px;
+  background-color: blue;
+  left: 60%;
+  top: 4px;
+  color: white;
+  font-size: 12px;
+  border-radius: 100%;
+  padding: 1%;
+  text-align: center;
+}
+.menus .nav-icon .hbadgeprofile {
+  position: absolute;
+  width: 11px;
+  height: 14px;
+  background-color: white;
+  left: 60%;
+  top: 4px;
+  color: #222;
+  font-size: 12px;
+  border-radius: 100%;
+  padding: 1px;
+  text-align: center;
+}
+.menus .nav-button:hover {
+  color: whitesmoke;
+  border-bottom: 2px solid white;
+}
+
+.sm,
+.sm svg {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .lg {
+    display: none !important;
+  }
+  .sm {
+    display: block;
+  }
+  .sm svg {
+    display: block;
+  }
+  .nav-button {
+    display: none;
+  }
+  .main .header svg {
+    margin: 7px 0 0 14px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .nav-button {
+    display: none;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,181 @@
+.sub-menu {
+  background: #8ddc97 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  margin: 24px;
+  /* grid-template-columns: auto auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+.sub-menu .course .boxx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 13px;
+}
+.sub-menu .course .boxx .num {
+  font: normal normal bold 24px/28px QuickSand;
+  color: #222;
+}
+.sub-menu .course .boxx .heading {
+  font: normal normal 700 16px/20px QuickSand;
+  color: #222;
+}
+.sub-menu .active-course {
+  color: #222;
+  border-bottom: 4px solid #222;
+}
+.sub-menu .classes .boxx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 13px;
+}
+.sub-menu .classes .boxx .num {
+  font: normal normal bold 24px/28px QuickSand;
+  color: #222;
+}
+.sub-menu .classes .boxx .heading {
+  font: normal normal 700 16px/20px QuickSand;
+  color: #222;
+}
+
+.shows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 17px;
+}
+.shows .sort {
+  display: flex;
+  gap: 12px;
+}
+.shows .sort .course-select {
+  width: 12rem;
+  background-color: #eeeeee;
+}
+
+.linee {
+  height: 1px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.12;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+.cards .ff {
+  background-color: white;
+}
+.cards .ff .card-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 18px;
+  margin-bottom: 9px;
+}
+.cards .ff .card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  padding-bottom: 10px !important;
+  padding: 24px;
+}
+.cards .ff .card .img {
+  width: 135px;
+}
+.cards .ff .card .content {
+  width: 275px;
+}
+.cards .ff .card .content .card-select {
+  width: 100%;
+  margin-bottom: 8px;
+}
+.cards .ff .card .content p {
+  margin-bottom: 4px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  font: normal normal 700 16px/20px QuickSand;
+  color: #222;
+}
+.cards .ff .card .content .spec {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-start;
+}
+.cards .ff .card .content .spec li {
+  font: normal normal 700 12px/16px QuickSand;
+  color: #666;
+}
+.cards .ff .card .content .not {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-start;
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+.cards .ff .card .content .not li {
+  font: normal normal 700 12px/16px Quicksand;
+  color: #666;
+}
+.cards .ff .card .content .not li span {
+  font: normal normal 700 12px/16px Quicksand;
+  color: #222;
+}
+
+.ff {
+  position: relative;
+}
+.ff .badge {
+  position: absolute;
+  width: 52px;
+  height: 18px;
+  background-color: #ffe4e6;
+  font-size: 10px;
+  color: #d80000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-family: QuickSand;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: auto;
+  }
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.line2 {
+  height: 1px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.12;
+}
+
+@media screen and (max-width: 476px) {
+  .content {
+    width: auto !important;
+  }
+  .ff {
+    width: auto !important;
+    height: auto;
+  }
+}/*# sourceMappingURL=body.css.map */
