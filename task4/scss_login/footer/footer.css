@@ -1,0 +1,43 @@
+.fone {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 16px;
+  background: #eeeeee;
+}
+.fone a {
+  font: normal normal 700 14px/18px Quicksand;
+  color: #1f7a54;
+  text-decoration: none;
+}
+.fone a:first-child {
+  border-right: 2px solid rgba(0, 0, 0, 0.1215686275);
+  padding-right: 8px;
+}
+.fone a:last-child {
+  padding-left: 8px;
+}
+
+.fsecinn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0e1e1;
+}
+.fsecinn svg {
+  padding-right: 16px;
+}
+.fsecinn p {
+  font: normal normal 700 12px/16px QuickSand;
+  color: #616161;
+}
+.fsecinn p .special {
+  font-family: QuickSand;
+}
+
+.fsecond {
+  height: 40px;
+}
+
+.footer {
+  margin-top: auto;
+}/*# sourceMappingURL=footer.css.map */

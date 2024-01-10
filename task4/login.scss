@@ -1,0 +1,66 @@
+@import "./scss_login/mixins/mixin.scss";
+@import "./scss_login/variables/variables.scss";
+
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: QuickSand;
+    src: url(./Quicksand/Quicksand\ font\ 1/static/Quicksand-Light.ttf);
+    font-weight: lighter;
+}
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: QuickSand;
+    background: $backgroundColor 0% 0% no-repeat padding-box;
+}
+
+.main {
+    box-sizing: border-box;
+    background-color: $backgroundColor;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    background-image: url("./icons/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position: calc(100% - 6px) center;
+    font: $fontMed;
+    color: $primaryBlack;
+}
+
+@import "./scss_login/header/header.scss";
+@import "./scss_login/body/body.scss";
+@import "./scss_login/footer/footer.scss";

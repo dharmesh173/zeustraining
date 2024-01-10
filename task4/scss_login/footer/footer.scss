@@ -1,0 +1,45 @@
+@import "../mixins/mixin.scss";
+@import "../variables/variables.scss";
+
+
+.fone {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 16px;
+    background: $backgroundColor;
+    a {
+        font: $fontMedSmall;
+        color: #1f7a54;
+        text-decoration: none;
+        &:first-child {
+            border-right: 2px solid #0000001f;
+            padding-right: 8px;
+        }
+        &:last-child {
+            padding-left: 8px;
+        }
+    }
+}
+
+.fsecinn {
+    @include flexCenter;
+    background: $footerBg;
+    svg {
+        padding-right: 16px;
+    }
+    p {
+        font: normal normal 700 12px/16px QuickSand;
+        color: #616161;
+        .special {
+            font-family: QuickSand;
+        }
+    }
+}
+
+.fsecond {
+    height: 40px;
+}
+
+.footer {
+    margin-top: auto;
+}
