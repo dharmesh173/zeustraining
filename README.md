@@ -11,3 +11,4 @@
 ###           Quantum_Teacher_Dashboard Page ( Html, CSS )
 ### Task 4 :- Quantum_Teacher_Dashboard Page_with_Sass ( Html, Sass )
 ###           Quantum_Login Page_with_Sass ( Html, Sass )
+### Task 5 :- Render Quantum Dashboard with JS and JSON
