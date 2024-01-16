@@ -181,3 +181,44 @@ const repeatCard = (data) => {
     parentBody.appendChild(cardContainer);
   });
 };
+
+const humbergerMenu = document.querySelector(".expand-menu");
+const menuButton = document.querySelector(".menu-bar");
+let tgl = false;
+
+menuButton.addEventListener("click", show);
+
+function show (){
+    if(tgl===true){
+        humbergerMenu.style = "display: flex";
+    }else{
+        humbergerMenu.style = "display: none";
+    }
+
+    tgl = !tgl;  
+}
+const customDropDownBtn = document.querySelector(".listdonw");
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    if(document.getElementById("myDropdown").classList.contains('show')){
+        customDropDownBtn.src = "./icons/icons/list-up.svg";
+        
+    }else{
+        customDropDownBtn.src = "./icons/icons/list-down.svg"
+    }
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.listdonw')) {
+      var dropdowns = document.getElementsByClassName("custom-dropdown");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+          customDropDownBtn.src = "./icons/icons/list-down.svg"
+        }
+      }
+    }
+  }
