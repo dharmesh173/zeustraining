@@ -12,3 +12,6 @@
 ### Task 4 :- Quantum_Teacher_Dashboard Page_with_Sass ( Html, Sass )
 ###           Quantum_Login Page_with_Sass ( Html, Sass )
 ### Task 5 :- Render Quantum Dashboard with JS and JSON
+### Task 6 :- On hovering over the Hamburger icon, the hamburger menu should get opened. 
+### Task 7 :- On hovering over an alert icon, a preview alert div should be displayed  
+### Task 8 :- A preview of the latest announcement should be shown by hovering over the announcement icon.

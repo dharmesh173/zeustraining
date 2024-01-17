@@ -241,11 +241,17 @@
 
           <div class="nav-icon">
             <div class="hbadge">2</div>
-            <img src="./icons/icons/alerts.svg" alt="icon of alert" />
+            <img
+              src="./icons/icons/alerts.svg"
+              id="notificationId"
+              alt="icon of alert"
+            />
           </div>
           <div class="nav-icon">
             <div class="hbadge">1</div>
             <img
+              class="announcement"
+              id="announcementId"
               src="./icons/icons/announcements.svg"
               alt="icon of announcements"
             />
@@ -257,7 +263,10 @@
               alt="profile picture"
             />
           </div>
-          <div class="nav-icon menu-bar" style="display: flex; align-items: center">
+          <div
+            class="nav-icon menu-bar"
+            style="display: flex; align-items: center"
+          >
             <ul>
               <li class="sm">
                 <svg
@@ -284,6 +293,22 @@
             </ul>
           </div>
 
+          <div class="announcement-div" style="display: none">
+            <div class="subdiv scrollable"></div>
+            <div class="btns">
+              <p class="shall">Show All</p>
+              <p class="crnew">Create New</p>
+            </div>
+          </div>
+
+          <div class="notifications" style="display: none">
+            <div class="scrollable notisubdiv"></div>
+
+            <div class="btns">
+              <p class="shall">Show All</p>
+            </div>
+          </div>
+
           <div class="expand-menu">
             <div class="subbox">
               <div class="menu-option">
@@ -292,13 +317,19 @@
               <div class="menu-option">
                 <div class="drop-down-2" id="content">
                   <span href="#" class="small-header-title">Content</span>
-                  <img src="./icons/icons/list-down.svg" class="listdonw" onclick="myFunction()" alt="down arrow" />
+                  <img
+                    src="./icons/icons/list-down.svg"
+                    class="listdonw"
+                    onclick="myFunction()"
+                    alt="down arrow"
+                  />
                 </div>
-                
               </div>
-              
-              <div  id="myDropdown" class="custom-dropdown">
-                <span href="#" class="small-header-title  cc">Course Catalog</span>
+
+              <div id="myDropdown" class="custom-dropdown">
+                <span href="#" class="small-header-title cc"
+                  >Course Catalog</span
+                >
               </div>
               <div class="menu-option">
                 <div class="drop-down-2">
@@ -356,173 +387,7 @@
 
       <div class="linee"></div>
 
-      <div class="cards">
-        <script src="./script.js"></script>
-        <!-- <div class="ff">
-          <div class="card">
-            <div class="img">
-              <img src="./images/images/imageMask-1.svg" alt="" />
-            </div>
-            <div class="content">
-              <p>
-                Acceleration
-                <img src="./icons/icons/favourite.svg" alt="" />
-              </p>
-              <ul class="spec">
-                <li class="ff">Physics</li>
-                <li>|</li>
-                <li>Grade 7</li>
-                <li style="color: #1f7a54">+2</li>
-              </ul>
-              <ul class="not">
-                <li><span>4</span> units</li>
-                <li><span>18</span> lessons</li>
-                <li><span>24</span> topics</li>
-              </ul>
-              <select name="" id="" class="card-select">
-                <option value="">Mr Frank's ClassB</option>
-              </select>
-              <ul class="spec">
-                <li class="ff">50 Student</li>
-                <li>21-Jan-2020 - 21-Aug-2020</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="line2"></div>
-
-          <div class="card-icons">
-            <img src="./icons/icons/preview.svg" alt="" />
-            <img src="./icons/icons/manage course.svg" alt="" />
-            <img src="./icons/icons/grade submissions.svg" alt="" />
-            <img src="./icons/icons/reports.svg" alt="" />
-          </div>
-        </div>
-
-        <div class="ff">
-          <div class="card">
-            <div class="img">
-              <img src="./images/images/imageMask-1.svg" alt="" />
-            </div>
-            <div class="content">
-              <p>
-                Displacement, Velocity and Speed
-                <img src="./icons/icons/favourite.svg" alt="" />
-              </p>
-              <ul class="spec">
-                <li class="ff">Physics 2</li>
-                <li>|</li>
-                <li>Grade 6</li>
-                <li style="color: #1f7a54">+3</li>
-              </ul>
-              <ul class="not">
-                <li><span>2</span> units</li>
-                <li><span>15</span> lessons</li>
-                <li><span>20</span> topics</li>
-              </ul>
-              <select name="" id="" class="card-select">
-                <option value="">No classes</option>
-              </select> -->
-        <!-- <ul class="spec">
-                    <li class="ff">50 Student</li>
-                    <li>21-Jan-2020 - 21-Aug-2020</li>
-               </ul> 
-            </div>
-          </div> -->
-
-        <!-- <div class="line2"></div>
-
-          <div class="card-icons">
-            <img src="./icons/icons/preview.svg" alt="" />
-            <img src="./icons/icons/manage course.svg" alt="" />
-            <img src="./icons/icons/grade submissions.svg" alt="" />
-            <img src="./icons/icons/reports.svg" alt="" />
-          </div>
-        </div>  -->
-
-        <!-- <div class="ff">
-          <div class="card">
-            <div class="img">
-              <img src="./images/images/imageMask-1.svg" alt="" />
-            </div>
-            <div class="content">
-              <p>
-                Introduction to Biology: Micro<br />organisms and how they
-                affec...
-                <img src="./icons/icons/favourite.svg" alt="" />
-              </p>
-              <ul class="spec">
-                <li class="ff">Biology</li>
-                <li>|</li>
-                <li>Grade 4</li>
-                <li style="color: #1f7a54">+1</li>
-              </ul>
-              <ul class="not">
-                <li><span>5</span> units</li>
-                <li><span>16</span> lessons</li>
-                <li><span>22</span> topics</li>
-              </ul>
-              <select name="" id="" class="card-select">
-                <option value="">All Classes</option>
-              </select>
-              <ul class="spec">
-                <li class="ff">300 Student</li>
-                 <li>21-Jan-2020 - 21-Aug-2020</li> 
-              </ul>
-            </div>
-          </div>
-
-          <div class="line2"></div>
-
-          <div class="card-icons">
-            <img src="./icons/icons/preview.svg" alt="" />
-            <img src="./icons/icons/manage course.svg" alt="" />
-            <img src="./icons/icons/grade submissions.svg" alt="" />
-            <img src="./icons/icons/reports.svg" alt="" />
-          </div>
-        </div> -->
-
-        <!-- <div class="ff">
-      <div class="badge">EXPIRED</div>
-        <div class="card">
-            <div class="img">
-                <img src="./images/images/imageMask-1.svg" alt="">
-            </div>
-            <div class="content">
-                <p>Introduction to High School Mathematics
-                    <img src="./icons/icons/favourite.svg" alt="">
-                </p>
-                <ul class="spec">
-                    <li class="ff">Mathematics</li>
-                    <li>|</li>
-                    <li>Grade 8</li>
-                    <li style="color: #1F7A54;">+3</li>
-                  </ul>
-                  <ul class="not">
-                    <li><span>4</span> units</li>
-                    <li><span>18</span> lessons</li>
-                    <li><span>24</span> topics</li>
-                  </ul>
-                  <select name="" id="" class="card-select">
-                    <option value="">Mr Frank's ClassA</option>
-                  </select>
-                  <ul class="spec">
-                    <li class="ff">44 Student</li>
-                    <li>14-Oct-2019 - 20-Oct-2020</li>
-                  </ul>
-            </div>
-        </div>
-
-        <div class="line2"></div>
-
-        <div class="card-icons">
-            <img src="./icons/icons/preview.svg" alt="">
-            <img src="./icons/icons/manage course.svg" alt="">
-            <img src="./icons/icons/grade submissions.svg" alt="">
-            <img src="./icons/icons/reports.svg" alt="">
-        </div>
-    </div> -->
-      </div>
+      <div class="cards"></div>
 
       <div class="footer">
         <div class="fone">
@@ -736,5 +601,7 @@
         </div>
       </div>
     </div>
+    <script src="./announcement.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

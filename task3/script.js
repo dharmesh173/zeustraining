@@ -184,11 +184,13 @@ const repeatCard = (data) => {
 
 const humbergerMenu = document.querySelector(".expand-menu");
 const menuButton = document.querySelector(".menu-bar");
-let tgl = false;
+let tgl = true;
 
 menuButton.addEventListener("click", show);
 
 function show (){
+    nots.style = "display:none";
+    annMenu.style = "display:none";
     if(tgl===true){
         humbergerMenu.style = "display: flex";
     }else{

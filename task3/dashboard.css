@@ -385,6 +385,169 @@ li {
   display: none;
 }
 
+.announcement-div {
+  /* width: 25vw; */
+  z-index: 1000;
+  /* padding: 7px; */
+  box-shadow: 0px 13px 20px #0000003d;
+  border-radius: 2px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  position: absolute;
+  /* top: 8%;
+  left: 75%; */
+  flex-direction: column;
+  right: 8%;
+  top: 56px;
+}
+
+.ann-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.paperclip {
+  width: 16px;
+  height: 13px;
+  margin-right: 4px;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 16px 0 16px;
+}
+
+.upper img {
+  width: 18px;
+  height: 18px;
+}
+/* .subdiv{
+  margin: 16px;
+} */
+.title-left {
+  color: #222222;
+  font: normal normal 500 12px/16px QuickSand;
+}
+.middle {
+  margin: 8px auto 8px 16px;
+}
+
+.text-middle {
+  color: #222222;
+  font: normal normal 600 14px/18px QuickSand;
+}
+
+.lower {
+  color: #6e6e6e;
+  font: normal normal 500 12px/18px QuickSand;
+  margin: 8px 16px 16px 16px;
+}
+.lower {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scrollable {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  height: 534px;
+}
+
+.announcement-div .btns,
+.notifications .btns {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  color: #1f7a54;
+  font: normal normal 700 14px/18px QuickSand;
+  border-radius: 0px 0px 2px 2px;
+  box-shadow: 0px 1px 6px #0000003d;
+}
+
+.announcement-div .btns .shall,
+.notifications .btns .shall {
+  border-right: 1px solid #0000001f;
+  font-family: normal normal 700 QuickSand;
+}
+.shall,
+.crnew {
+  width: 50%;
+  text-align: center;
+  font: normal normal 700 14px/18px QuickSand;
+  letter-spacing: -0.35px;
+  text-transform: uppercase;
+}
+
+.notifications {
+  box-shadow: 0px 13px 20px #0000003d;
+  height: 582px;
+  /* width: 315px; */
+  position: absolute;
+  right: 8%;
+  top: 56px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* display: none; */
+  border-radius: 2px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.notifications .scrollable .hh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 16px 0 16px;
+}
+.notifications .scrollable .hh img {
+  width: 18px;
+  height: 18px;
+}
+.notifications .scrollable .hh .head {
+  font-size: 14px;
+  color: #222222;
+  font-family: QuickSand;
+  font-weight: 500;
+  /* margin: 4px; */
+  margin-right: 4px;
+  width: 260px;
+  font: normal normal 500 14px/18px QuickSand;
+}
+.notifications .scrollable .mid {
+  color: #222222;
+  font-size: 12px;
+  font-family: QuickSand;
+  font-weight: 600;
+  /* margin: 4px; */
+  font: normal normal 600 12px/16px QuickSand;
+  margin: 8px auto 8px 16px;
+}
+
+.notifications .scrollable .last {
+  color: #6e6e6e;
+  font-size: 12px;
+  text-align: right;
+  font-family: QuickSand;
+  font-weight: 500;
+  /* margin: 4px; */
+  margin: 8px 16px 16px 16px;
+  display: flex;
+  justify-content: flex-end;
+}
 @media screen and (max-width: 1024px) {
   .cards {
     grid-template-columns: auto;
@@ -407,14 +570,14 @@ li {
     height: 40px;
   }
   .expand-menu {
-    width: 280px;
+    width: 37vw;
     z-index: 1000;
     padding: 7px;
     box-shadow: 0px 13px 20px #0000003d;
     border-radius: 2px;
     background: #ffffff 0% 0% no-repeat padding-box;
     position: absolute;
-    top: 13%;
+    top: 56px;
     left: 59%;
   }
 
@@ -430,6 +593,11 @@ li {
     margin: 15px auto 15px 16px;
   }
 
+  /* .announcement-div{
+    top: 5%;
+   
+  }  */
+
   .subbox {
     width: 100%;
     margin: 5px;
@@ -444,15 +612,16 @@ li {
   .drop-down-2 img {
     margin-right: 24px;
     color: #1f7a54;
+    margin-left: 1vw;
   }
   .cc {
     margin-left: 16px;
   }
-  .custom-dropdown{
+  .custom-dropdown {
     display: none;
     margin: 15px auto 15px 16px;
   }
-  .show{
+  .show {
     display: block;
   }
 }
@@ -460,6 +629,9 @@ li {
 @media screen and (max-width: 476px) {
   .content {
     width: auto !important;
+  }
+  .drop-down-2 img {
+    margin-right: 0;
   }
 
   .ff {
